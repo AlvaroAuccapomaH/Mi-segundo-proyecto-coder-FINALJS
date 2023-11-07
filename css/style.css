@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+  width: 80rem;
+  /* border: 0.1rem solid black; */
+  margin: auto;
+  margin-top: 15rem;
+  box-shadow: 1.5rem 1.5rem black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: whitesmoke;
+  font-size: 2.5rem;
+}
+
+.form h2 {
+  font-size: 3rem;
+  margin: 4rem;
+}
+
+.box {
+  padding: 1.2rem;
+  width: 65%;
+  border: 1px solid black;
+  outline: none;
+  margin: 1.5rem;
+  border-radius: 2rem;
+}
+
+#submit {
+  padding: 1.2rem 3rem;
+  width: 40%;
+  margin-top: 4rem;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #090c9b;
+}
+
+.form a {
+  text-decoration: none;
+  color: black;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.form a:hover {
+  color: #090c9b;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.side img {
+  width: 45rem;
+  height: 100%;
+}
