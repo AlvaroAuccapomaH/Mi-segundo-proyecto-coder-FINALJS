@@ -34,12 +34,13 @@
 }
 
 .box {
-  padding: 1.2rem;
+  padding: 1rem;
   width: 65%;
   border: 1px solid black;
   outline: none;
   margin: 1.5rem;
   border-radius: 2rem;
+  font-size: 2rem;
 }
 
 #submit {
@@ -50,6 +51,7 @@
   color: #fff;
   font-weight: bold;
   border: none;
+  font-size: 1.75rem;
 }
 
 #submit:hover {
@@ -59,13 +61,12 @@
 
 .form a {
   text-decoration: none;
-  color: black;
-  margin-top: 2rem;
-  font-weight: 700;
 }
 
-.form a:hover {
-  color: #090c9b;
+.registro input {
+  width: 100% !important;
+  padding: 1.2rem 3rem !important;
+  font-size: 1.75rem;
 }
 
 .side {
@@ -77,4 +78,144 @@
 .side img {
   width: 45rem;
   height: 100%;
+}
+
+/***************REGISTRARSE*****************/
+.cotenedor-registro {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/registerpaciente.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.cotenedor-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor-formulario {
+  position: relative;
+  width: 70rem;
+  height: 90rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-formulario h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.contenedor-formulario .input-form {
+  margin: 3rem 0;
+  width: 45rem;
+  border-bottom: 2px solid #fff;
+  position: relative;
+}
+
+.contenedor-formulario .input-form input {
+  width: 100%;
+  height: 5.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 2rem 0 0.5rem;
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+i {
+  position: absolute;
+  color: #fff;
+  top: 1.3rem;
+  right: 0;
+  font-size: 2rem;
+}
+
+.formulario input::placeholder {
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  background: #696969;
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  /* cursor: pointer; */
+  box-shadow: 0.3rem 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.btn2 {
+  opacity: 0.5;
+}
+
+.validacion {
+  background-color: red;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.verificarRegistro {
+  width: 40rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+
+  text-align: center;
+  padding: 0 3rem 3rem;
+  height: 33rem;
+  font-size: 5rem;
+}
+
+.verificarRegistro ion-icon {
+  color: #00ff00;
+  font-size: 5rem;
+}
+
+.verificarRegistro button {
+  width: 100%;
+  background: #00ff00;
+  padding: 1rem 0;
+  margin-top: 2.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.verificarRegistro a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.open-slide {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
 }
