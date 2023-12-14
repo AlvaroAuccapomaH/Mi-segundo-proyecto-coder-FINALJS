@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+
+    const storedUsers = localStorage.getItem('usuarios');
+    const usuarios = storedUsers ? JSON.parse(storedUsers) : [];
+
+
     const usuario = {
         nombre: '',
         apellido: '',
@@ -121,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
             inputEnviar.style.cursor = 'none'
             inputEnviar.disabled = true;
             inputEnviar.classList.add('btn2')
-            console.log(usuario);
 
             return
         }
@@ -135,8 +139,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function okRegistro() {
         validarRegistro.classList.add("open-slide")
     }
+
     inputEnviar.addEventListener('click', function (e) {
         e.preventDefault();
+        usuarios.push(usuario);
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
         okRegistro();
     });
+
+
 })

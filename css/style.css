@@ -43,7 +43,8 @@
   font-size: 2rem;
 }
 
-#submit {
+#submit,
+#submitLogin {
   padding: 1.2rem 3rem;
   width: 40%;
   margin-top: 4rem;
@@ -54,7 +55,8 @@
   font-size: 1.75rem;
 }
 
-#submit:hover {
+#submit:hover,
+#submitLogin:hover {
   cursor: pointer;
   background-color: #090c9b;
 }

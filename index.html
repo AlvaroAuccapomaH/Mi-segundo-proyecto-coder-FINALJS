@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/doctor.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
     <div class="container">
-        <form action="" class="form">
+        <form action="#" class="form" id="loginForm">
             <h2>Login</h2>
-            <input type="email" name="email" class="box" placeholder="Ingresar Email">
-            <input type="password" name="password" class="box" placeholder="Ingresar Password">
-            <input type="submit" value="Ingresar" id="submit">
-            <a href="./pages/registrarse.html" class="registro"><input type="button" value="Registrarse"
-                    id="submit"></a>
+            <input type="email" name="emailLogin" id="emailLogin" class="box" placeholder="Ingresar Email" required>
+            <input type="password" name="passwordLogin" id="passwordLogin" class="box" placeholder="Ingresar Password"
+                required>
+            <input type="submit" value="Ingresar" id="submitLogin">
+            <a href="./pages/registrarse.html" class="registro">
+                <input type="button" value="Registrarse" id="submit">
+            </a>
         </form>
 
         <div class="side">
@@ -28,7 +31,7 @@
 
     </div>
 
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/indexLogin.js"></script>
 </body>
 
 </html>
