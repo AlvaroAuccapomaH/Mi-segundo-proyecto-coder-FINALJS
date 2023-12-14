@@ -12,7 +12,7 @@ loginFrom.addEventListener('submit', function (e) {
     const validUser = users.find(user => user.email === email && user.contra1 === password)
 
     if (!validUser) {
-        return alert("USUARIO Y/O CONTRASEÑA ES INCORRECTO")
+        return alert("USUARIO Y/O CONTRASEÑA ES INCORRECTO, VUELVA A INTENTAR O REGISTRESE")
     }
     alert(`BIENVENIDO ${validUser.nombre} ${validUser.apellido}`)
     window.location.href = "/SimuladorInteractivo1raEntrega/pages/paginaPrincipal.html";
