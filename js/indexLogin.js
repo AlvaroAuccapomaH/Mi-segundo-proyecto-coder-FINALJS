@@ -15,6 +15,7 @@ loginFrom.addEventListener('submit', function (e) {
         return alert("USUARIO Y/O CONTRASEÑA ES INCORRECTO")
     }
     alert(`BIENVENIDO ${validUser.nombre} ${validUser.apellido}`)
-    window.location.href = "../pages/paginaPrincipal.html"
+    window.location.href = "/SimuladorInteractivo1raEntrega/pages/paginaPrincipal.html";
+
 });
 
