@@ -16,6 +16,6 @@ loginFrom.addEventListener('submit', function (e) {
     }
     alert(`BIENVENIDO ${validUser.nombre} ${validUser.apellido}`)
     window.location.href = "/SimuladorInteractivo1raEntrega/pages/paginaPrincipal.html";
-
+    /*  window.location.href = "./pages/paginaPrincipal.html"; */
 });
 
